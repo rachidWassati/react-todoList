@@ -3,10 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const data = [
+  {
+      prenom: 'rachid',
+      nom : 'jeffali'
+  },
+  {
+      prenom: 'zak',
+      nom : 'jeffali'
+  },
+  {
+      prenom: 'steve',
+      nom : 'rachid'
+  }
+]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App tab = {data}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
