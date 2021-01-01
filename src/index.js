@@ -8,16 +8,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const data = [
   {
       prenom: 'rachid',
-      nom : 'jeffali'
+      nom : 'jeffali',
+      id : 0
   },
   {
       prenom: 'zak',
-      nom : 'jeffali'
+      nom : 'jeffali',
+      id : 1
   },
   {
       prenom: 'steve',
-      nom : 'rachid'
-  }
+      nom : 'rachid',
+      id : 2
+  },
+    {
+        prenom: 'steve',
+        nom : 'jeffali',
+        id : 3
+    }
 ]
 
 ReactDOM.render(

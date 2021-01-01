@@ -6,13 +6,21 @@ class Bonjour extends Component {
         this.state = {
             gras : false
         }
+
+        this.toggleGras = this.toggleGras.bind(this)
+    }
+
+    toggleGras() {
+        this.setState({
+            gras : !this.state.gras
+        })
     }
 
 
     render() {
         return(
             <div className='container'>
-                <p className= 'mt-4' style = {{fontWeight: this.state.gras ? 'bold': 'normal'}}>
+                <p className= 'mt-4' style = {{fontWeight: this.state.gras ? 'bold': 'normal'}} onClick={this.toggleGras}>
                     Bonjour a {this.props.presentation.prenom} {this.props.presentation.nom}
                 </p>
             </div>
